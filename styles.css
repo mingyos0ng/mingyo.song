@@ -283,6 +283,93 @@ nav a.active {
   font-size: clamp(30px, 4vw, 42px);
 }
 
+/* CLICKABLE FILM THUMBNAIL */
+
+.film-thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--plum);
+}
+
+.film-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.film-thumbnail:hover img {
+  transform: scale(1.04);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--plum);
+  color: var(--cream);
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.film-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--plum);
+  font-weight: 700;
+}
+
+.film-link:hover {
+  text-decoration: underline;
+}
+
+/* VIMEO VIDEO PLAYER */
+
+.film-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #29100C;
+}
+
+.film-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* PERSONAL VIDEOS */
+
+.vlog-intro {
+  max-width: 600px;
+  margin-bottom: 35px;
+}
+
+.youtube-channel-link {
+  display: inline-block;
+  margin-top: 35px;
+  color: var(--plum);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.youtube-channel-link:hover {
+  text-decoration: underline;
+}
+
 /* ABOUT PAGE */
 
 .about-layout {
