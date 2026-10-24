@@ -796,23 +796,22 @@ footer {
   }
 }
 
-/* HOME HERO REFINEMENTS */
+/* HOME HERO */
 
 .hero {
-  min-height: 75vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .hero h1 {
   font-size: clamp(70px, 9vw, 160px);
   line-height: 0.95;
   letter-spacing: -0.065em;
-  margin-top: 55px;
-  margin-bottom: 30px;
+  margin-top: 45px;
+  margin-bottom: 25px;
 }
 
 .hero-description {
@@ -821,9 +820,27 @@ footer {
 }
 
 .hero-bottom {
-  margin-top: auto;
-  padding-top: 22px;
+  margin-top: 75px;
+  padding-top: 20px;
   border-top: 1px solid rgba(100, 44, 67, 0.3);
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .hero h1 {
+    font-size: clamp(55px, 12vw, 90px);
+    margin-top: 35px;
+  }
+
+  .hero-bottom {
+    margin-top: 50px;
+  }
 }
 
 /* MOBILE */
